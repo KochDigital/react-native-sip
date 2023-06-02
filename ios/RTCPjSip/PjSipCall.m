@@ -136,8 +136,8 @@
     // TODO: Fallback for "The RFC 2833 payload format did not work".
     
     // Disables Original RFC 2833 dtmf
-    //pj_str_t value = pj_str((char *) [digits UTF8String]);
-    //pjsua_call_dial_dtmf(self.id, &value);
+    pj_str_t value = pj_str((char *) [digits UTF8String]);
+    pjsua_call_dial_dtmf(self.id, &value);
     
     // Adds Patch For SipInfo dtmf
     pjsua_call_send_dtmf_param param;
