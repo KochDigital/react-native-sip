@@ -874,7 +874,7 @@ public class PjSipService extends Service {
             PjSipCall call = findCall(callId);
             
             // Disables Original RFC 2833 dtmf
-            //call.dialDtmf(digits);
+            call.dialDtmf(digits);
             
             // Adds Patch For SIPINFO dtmf
             CallSendRequestParam prm = new CallSendRequestParam();
